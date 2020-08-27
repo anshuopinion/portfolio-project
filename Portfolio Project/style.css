@@ -1,0 +1,295 @@
+/* default css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* reusable */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.card {
+  -webkit-box-shadow: -0.1rem 0.4rem 0.7rem -0.1rem #000000;
+  box-shadow: -0.1rem 0.4rem 0.7rem -0.1rem #000000;
+  padding: 0.5rem 1rem;
+  width: 35rem;
+  height: 8rem;
+  border-radius: 1rem;
+  text-align: justify;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.92);
+  -webkit-box-shadow: 0px 14px 19px 1px rgba(0, 0, 0, 0.92);
+  -moz-box-shadow: 0px 14px 19px 1px rgba(0, 0, 0, 0.92);
+  box-shadow: 0px 14px 19px 1px rgba(0, 0, 0, 0.92);
+}
+.card p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.card:hover {
+  transition: 0.2s ease-in;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+  padding-top: 3rem;
+}
+.section i {
+  font-size: 12rem;
+}
+.btn {
+  background-color: #000;
+  align-self: flex-end;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: 0.2s ease-in;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.details span:first-child {
+  font-size: 3rem;
+}
+.details span:last-child {
+  margin: 1rem 0;
+  font-size: 5rem;
+}
+
+/* navigation */
+#heading {
+  background: rgb(252, 255, 58);
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#heading nav {
+  height: 2rem;
+}
+#heading ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+#heading li {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+#heading a:hover {
+  border-bottom: 2px solid #000;
+}
+
+/* about section */
+
+.about {
+  background: rgb(252, 255, 58);
+  height: 30rem;
+}
+
+.about img {
+  width: 15rem;
+  position: relative;
+  top: -12rem;
+  left: 0;
+  border-radius: 2rem;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.92);
+  -webkit-box-shadow: 0px 14px 19px 1px rgba(0, 0, 0, 0.92);
+  -moz-box-shadow: 0px 14px 19px 1px rgba(0, 0, 0, 0.92);
+  box-shadow: 0px 14px 19px 1px rgba(0, 0, 0, 0.92);
+  z-index: 100;
+}
+
+.about h1 {
+  position: relative;
+  top: -12rem;
+  left: 0;
+  font-size: 5rem;
+}
+.about h2 {
+  position: relative;
+  top: -18rem;
+  left: 0;
+}
+.about p {
+  position: relative;
+  top: -12rem;
+  left: 0;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* Youtube */
+
+#youtube i {
+  color: red;
+}
+#youtube .btn {
+  background-color: red;
+}
+#youtube .btn:hover {
+  background-color: #fff;
+}
+#youtube .card {
+  box-shadow: red;
+  -webkit-box-shadow: 0px 8px 19px 3px red;
+  -moz-box-shadow: 0px 8px 19px 3px red;
+  box-shadow: 0px 8px 19px 3px red;
+}
+
+#youtube .card:hover {
+  box-shadow: none;
+  border: 1px solid red;
+}
+#telegram {
+  margin-top: 2rem;
+}
+#telegram i {
+  color: rgb(0, 140, 255);
+}
+#telegram .btn {
+  background-color: rgb(0, 140, 255);
+}
+#telegram .btn:hover {
+  background-color: #fff;
+}
+
+#telegram .card {
+  box-shadow: rgb(0, 140, 255);
+  -webkit-box-shadow: 0px 8px 19px 3px rgb(0, 140, 255);
+  -moz-box-shadow: 0px 8px 19px 3px rgb(0, 140, 255);
+  box-shadow: 0px 8px 19px 3px rgb(0, 140, 255);
+}
+
+#telegram .card:hover {
+  box-shadow: none;
+  border: 1px solid rgb(0, 140, 255);
+}
+
+#github {
+  margin-top: 2rem;
+
+  height: 17rem;
+}
+
+#github i {
+  color: rgb(0, 0, 0);
+}
+#github .btn {
+  background-color: rgb(0, 0, 0);
+  align-self: center;
+  margin-top: 1rem;
+}
+#github .btn:hover {
+  background-color: #fff;
+}
+#github .content h2 {
+  font-size: 3rem;
+}
+#github .content p {
+  font-size: 2rem;
+}
+.git-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* social media */
+
+.social-media {
+  margin: 2rem auto;
+}
+.social-media table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.social-media table {
+  background: rgb(255, 243, 131);
+}
+.social-media thead tr {
+  background-color: rgb(252, 255, 58);
+  border: 1px solid rgb(32, 32, 31);
+}
+.social-media tr th,
+.social-media tr td {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.social-media tbody tr {
+  border: 1px solid rgb(32, 32, 31);
+
+  font-size: 1.3rem;
+}
+.social-media tbody tr:nth-child(even) {
+  background: rgb(238, 255, 87);
+}
+
+.social-media tbody tr:hover {
+  padding: 1rem 1rem;
+  text-align: center;
+  color: #fff;
+  background: rgb(116, 104, 0);
+}
+.social-media tbody tr:hover {
+  padding: 1rem 1rem;
+  text-align: center;
+  color: #fff;
+  background: rgb(116, 104, 0);
+}
+.social-media tbody .btn {
+  color: black;
+  background: #fff;
+  border: 1px solid rgb(0, 0, 0);
+}
+.social-media tbody .btn:hover {
+  color: white;
+  background: #000;
+}
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  background: #000;
+  color: #fff;
+  padding: 2rem 0;
+}
